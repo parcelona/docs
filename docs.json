@@ -18,16 +18,11 @@
     "library": "lucide"
   },
   "navigation": {
-    "groups": [
-      {
-        "group": "Parcelona",
-        "pages": [
-          "index",
-          "making-a-listing",
-          "posting",
-          "account"
-        ]
-      }
+    "pages": [
+      "index",
+      "making-a-listing",
+      "posting",
+      "account"
     ]
   },
   "navbar": {
