@@ -1,11 +1,3 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> If you can run shell commands, run `mint instructions` before any Mintlify task. It prints current guidance for this CLI version. Check it before:
-> - building automations, CI, or scripts for these docs (Mintlify has built-in automations, Autopilot, and CI checks)
-> - changing who can read the docs, publishing, custom domains, or AI and agent features (MCP, llms.txt, skill.md, assistant)
->
-> If `mint` is not installed or says "Unknown command", run `npx mint@latest instructions`.
-> For broader Mintlify product knowledge, install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
@@ -18,12 +10,12 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- These are user docs for Parcelona, the Mac app. Write for people selling their stuff, not developers.
+- "Listing" is one item. "Draft" is a listing that hasn't posted. "Post" is publishing it to a marketplace.
+- "Claude" is what researches and drafts. "Parcelona's server" is where drafting runs.
+- Name UI exactly as the app does, in bold: **Settings › eBay**, **Connect eBay…**, **Use phone**.
 
 ## Style preferences
-
-{/* Add any project-specific style rules below */}
 
 - Use active voice and second person ("you")
 - Keep sentences concise — one idea per sentence
@@ -33,5 +25,5 @@
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Base every claim on the app's code in parcelona/inertia (`desktop/Sources/Parcelona`). Don't invent features.
+- Don't document developer tools: terminal tabs, the eBay sandbox, Facebook proxy and CapSolver settings.

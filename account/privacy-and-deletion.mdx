@@ -1,0 +1,51 @@
+---
+title: "Privacy and account deletion"
+description: "What stays on your Mac, what reaches Parcelona's server, and how to delete your account."
+keywords: ["privacy", "data", "delete account", "remove data", "security"]
+---
+
+Most of what you do in Parcelona stays on your Mac. This page summarizes what leaves it. The full details are in the [privacy policy](https://parcelona.app/privacy).
+
+## What stays on your Mac
+
+- Your listings, photos, settings and archive, in your listings folder and in `~/Library/Application Support/Parcelona`.
+- Your Parcelona, eBay and Facebook sign-ins, in your Keychain.
+- Everything about Facebook: sign-in, cookies and posts happen in a Chrome window on your Mac.
+
+## What reaches Parcelona's server
+
+- **Your account**: your Google name, email and profile picture, and your sessions.
+- **One record per listing you post**: an id and when it posted, so the free plan can count. Not the listing itself.
+- **Drafting**: the item's name, condition and notes, your instructions and pricing, and up to four photos. The server passes them to Anthropic's Claude to write the listing and doesn't save the photos or the draft.
+- **Phone photos**: encrypted on your phone with a key only your Mac has. The server passes them straight through and keeps nothing.
+- **eBay sign-in**: the server turns eBay's approval into an encrypted token that only your Mac keeps.
+- **Crash and error reports**: what went wrong and where, never your photos or marketplace passwords.
+
+Parcelona doesn't sell your information or show ads.
+
+## Delete your account
+
+<Steps>
+  <Step title="Open Settings">
+    Open **Settings** (⌘,) and go to **General**.
+  </Step>
+  <Step title="Choose Delete account">
+    Under **Account**, choose **Delete account…**, then **Delete Account** to confirm.
+  </Step>
+</Steps>
+
+This removes your account, sessions, Google tokens and listing count from Parcelona's server right away, then signs you out.
+
+<Warning>
+  Deleting your account can't be undone. It doesn't remove listings already posted on eBay or Facebook; end those on each marketplace. Listings and photos on your Mac stay too.
+</Warning>
+
+You can also email [hello@parcelona.app](mailto:hello@parcelona.app) and we'll delete your account for you. Email us as well if you want your crash reports removed.
+
+### Remove what's on your Mac
+
+To remove everything Parcelona saved locally, quit the app, then delete:
+
+- **Parcelona** from **Applications**.
+- Your listings folder (`~/Parcelona/listings` unless you changed it).
+- `~/Library/Application Support/Parcelona`.
