@@ -1,72 +1,82 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "maple",
+  "name": "Parcelona",
+  "description": "How to use Parcelona, the Mac app that prices, writes and posts your listings to eBay and Facebook.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#000000"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://parcelona.app"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": ["index", "getting-started", "signing-in"]
+      },
+      {
+        "group": "Listings",
+        "pages": ["listings/photos-and-drafting", "listings/review-and-post", "listings/customize-drafts"]
+      },
+      {
+        "group": "Marketplaces",
+        "pages": ["marketplaces/ebay", "marketplaces/facebook"]
+      },
+      {
+        "group": "Your account",
+        "pages": ["account/free-plan", "account/privacy-and-deletion"]
+      },
+      {
+        "group": "Help",
+        "pages": ["troubleshooting", "keyboard-shortcuts"]
+      }
+    ]
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:hello@parcelona.app"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Download for Mac",
+      "href": "https://downloads.parcelona.app/Parcelona.dmg"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://parcelona.app"
+    },
+    "links": [
+      {
+        "header": "Parcelona",
+        "items": [
+          { "label": "Home", "href": "https://parcelona.app" },
+          { "label": "Privacy", "href": "https://parcelona.app/privacy" },
+          { "label": "Terms", "href": "https://parcelona.app/terms" },
+          { "label": "hello@parcelona.app", "href": "mailto:hello@parcelona.app" }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"],
+    "display": "header"
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.parcelona.app"
     }
   }
 }
