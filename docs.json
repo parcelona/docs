@@ -20,24 +20,13 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting started",
-        "pages": ["index", "getting-started", "signing-in"]
-      },
-      {
-        "group": "Listings",
-        "pages": ["listings/photos-and-drafting", "listings/review-and-post", "listings/customize-drafts"]
-      },
-      {
-        "group": "Marketplaces",
-        "pages": ["marketplaces/ebay", "marketplaces/facebook"]
-      },
-      {
-        "group": "Your account",
-        "pages": ["account/free-plan", "account/privacy-and-deletion"]
-      },
-      {
-        "group": "Help",
-        "pages": ["troubleshooting", "keyboard-shortcuts"]
+        "group": "Parcelona",
+        "pages": [
+          "index",
+          "making-a-listing",
+          "posting",
+          "account"
+        ]
       }
     ]
   },
@@ -62,21 +51,75 @@
       {
         "header": "Parcelona",
         "items": [
-          { "label": "Home", "href": "https://parcelona.app" },
-          { "label": "Privacy", "href": "https://parcelona.app/privacy" },
-          { "label": "Terms", "href": "https://parcelona.app/terms" },
-          { "label": "hello@parcelona.app", "href": "mailto:hello@parcelona.app" }
+          {
+            "label": "Home",
+            "href": "https://parcelona.app"
+          },
+          {
+            "label": "Privacy",
+            "href": "https://parcelona.app/privacy"
+          },
+          {
+            "label": "Terms",
+            "href": "https://parcelona.app/terms"
+          },
+          {
+            "label": "hello@parcelona.app",
+            "href": "mailto:hello@parcelona.app"
+          }
         ]
       }
     ]
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude"],
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ],
     "display": "header"
   },
   "seo": {
     "metatags": {
       "canonical": "https://docs.parcelona.app"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/getting-started",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/signing-in",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/keyboard-shortcuts",
+      "destination": "/making-a-listing",
+      "permanent": true
+    },
+    {
+      "source": "/troubleshooting",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/listings/*",
+      "destination": "/making-a-listing",
+      "permanent": true
+    },
+    {
+      "source": "/marketplaces/*",
+      "destination": "/posting",
+      "permanent": true
+    },
+    {
+      "source": "/account/*",
+      "destination": "/account",
+      "permanent": true
+    }
+  ]
 }
